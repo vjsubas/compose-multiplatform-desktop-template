@@ -15,11 +15,11 @@ import androidx.compose.ui.window.application
 @Composable
 @Preview
 fun App() {
-    var text by remember { mutableStateOf("Hello, World!") }
+    var text by remember { mutableStateOf("hello press me!") }
 
     MaterialTheme {
         Button(
-            onClick = { text = "Hello, Desktop!" },
+            onClick = { text = "Hello this is my first edit!" },
             modifier = Modifier.testTag("button")
         ) {
             Text(text)
